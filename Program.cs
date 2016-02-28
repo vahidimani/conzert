@@ -56,7 +56,7 @@ namespace ConsoleApplication1
                 
             }
 
-            double ol;
+            
             double IQR=Q3-Q1;
             
             Console.WriteLine("Min: " + min +"          Max: " + max);
@@ -66,7 +66,7 @@ namespace ConsoleApplication1
             {
                 if (v2[i] > Q3 + IQR || v2[i] < Q1 - IQR)
                 {
-                    Console.WriteLine("outlier = " + v[i] + "  ");
+                    Console.WriteLine("outlier = " + v2[i] + "  ");
                     r++;
                 }
             }
@@ -76,6 +76,7 @@ namespace ConsoleApplication1
             }
             Console.Read();
             // 1 2 3 4 5 6 7 8 9 10 11 12
+            //25 29 3 32 85 33 27 28
         }
     }
 }
